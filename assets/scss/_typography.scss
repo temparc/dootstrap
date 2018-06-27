@@ -1,0 +1,123 @@
+/**
+* General typography styles
+*/
+
+html, body, input, textarea, button {
+  // root font size for REM values
+  font-size: 1em;
+  font-family: $font;
+}
+
+article, form, .col {
+  line-height: 1.625rem;
+  h1,h2,h3,h4,h5,h6,p,ul,ol {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+em, i {
+  font-family: $font-italic;
+}
+
+strong, b {
+  font-family: $font-bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: $primary;
+  &:hover{
+    color: $link-color;
+    transition: .2s linear;
+  }
+  &:active, &:focus, &:visited {
+    outline: none;
+    borde: none;
+    text-decoration: none;
+  }
+}
+
+figure {
+  display: block;
+  width: 100%;
+  padding-bottom: 15px;
+
+  &.img-right {
+    width: auto;
+    float: right;
+    padding-left: 15px;
+  }
+
+  &.img-left {
+    width: auto;
+    float: left;
+    padding-right: 15px;
+  }
+
+  &.img-right, &.img-left {
+    @media ( max-width: $screen-sm ) {
+      float: none;
+      clear: both;
+      display: block;
+    }
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    font-size: 0.875rem;
+  }
+}
+
+//alignment
+.text-center {
+  text-align:center;
+}
+
+.text-left {
+  text-align:left;
+}
+
+.text-right {
+  text-align:right;
+}

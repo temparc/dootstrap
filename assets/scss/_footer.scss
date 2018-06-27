@@ -1,0 +1,46 @@
+/**
+* Footer
+*/
+
+footer {
+  background: $primary;
+  color: $secondary;
+  padding: $section_padding_desktop;
+
+  @media ( max-width: $screen-xs ) {
+    padding: $section_padding_mobile;
+  }
+
+  a {
+    color: $secondary;
+    line-height: 1.625rem;
+    display: block;
+  }
+
+  .col {
+    text-align:center;
+  }
+}
+
+.subfooter {
+  text-align:right;
+  padding: $section_padding_desktop;
+  font-size: 0.875rem;
+
+  @media ( max-width: $screen-xs ) {
+    padding: $section_padding_mobile;
+  }
+
+  li {
+    border-right: 1px solid $primary;
+    padding: 5px;
+    &:last-child {
+      border: none;
+    }
+
+    a {
+      padding: 0px;
+    }
+  }
+
+}

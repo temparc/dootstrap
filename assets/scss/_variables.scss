@@ -1,0 +1,30 @@
+// colours
+$primary: #41434c;
+$secondary: #edeff0;
+$white: #fff;
+$link-color: #777;
+$placeholder-color: $primary;
+$error-color: red;
+
+// fonts
+$font: 'Gotham Book';
+$font-italic: 'Gotham Book Italic';
+$font-bold: 'Gotham Bold';
+
+// sections
+$section_padding_desktop: 30px 0px;
+$section_padding_mobile: 15px 0px;
+
+// breakpoints
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 900px;
+$screen-lg: 1100px;
+$menu-breakpoint: $screen-md;
+
+// grid & gutters
+$grid-gutter-width: 15px;
+$form-field-gutter: 7.5px 0px;
+
+// logos & icons
+$logo_path: '../../images/logo.svg';

@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position:center;
+  height: 280px;
+
+  @media ( max-width: $screen-lg ) {
+    height: 250px;
+  }
+
+  @media ( max-width: $screen-md ) {
+    height: 225px;
+  }
+
+  @media ( max-width: $screen-sm ) {
+    height: 180px;
+  }
+
+  @media ( max-width: $screen-xs ) {
+    height: 100px;
+  }
+
+}

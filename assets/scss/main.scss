@@ -1,0 +1,19 @@
+/**
+* Main SCSS File
+* Imports all SCSS in an order of your choosing, remove unnecessary files to reduce final CSS file size
+*/
+
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "grid";
+@import "fonts";
+@import "typography";
+@import "buttons";
+@import "nav";
+@import "header";
+@import "footer";
+@import "forms";
+@import "hero";
+@import "sidebar";

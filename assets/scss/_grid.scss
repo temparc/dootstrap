@@ -1,0 +1,124 @@
+/**
+* GRID
+* Based on 12 column layout
+*/
+
+// main container
+.container {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  &.container__med {
+    max-width: 1140px;
+  }
+
+  &.container__small {
+    max-width: 800px;
+  }
+}
+
+// rows
+.row {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: $section_padding_desktop;
+
+  @media ( max-width: $screen-xs ) {
+    padding: $section_padding_mobile;
+  }
+
+  &.colored {
+    @include colored( $secondary );
+  }
+
+  &.center-vertical {
+    align-items: center;
+  }
+}
+
+// columns
+.col{
+  position: relative;
+  min-height: 1px;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex: 0 0 calc(100% - #{$grid-gutter-width * 2});
+  max-width: 100%;
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+
+  &.one {
+    flex: 0 0 calc(8.3333% - #{$grid-gutter-width * 2});
+  }
+
+  &.two {
+    flex: 0 0 calc(16.6666% - #{$grid-gutter-width * 2});
+  }
+
+  &.three {
+    flex: 0 0 calc(25% - #{$grid-gutter-width * 2});
+  }
+
+  &.four {
+    flex: 0 0 calc(33.3333% - #{$grid-gutter-width * 2});
+  }
+
+  &.five {
+    flex: 0 0 calc(41.6666% - #{$grid-gutter-width * 2});
+  }
+
+  &.six {
+    flex: 0 0 calc(50% - #{$grid-gutter-width * 2});
+  }
+
+  &.seven {
+    flex: 0 0 calc(58.3333% - #{$grid-gutter-width * 2});
+  }
+
+  &.eight {
+    flex: 0 0 calc(66.6666% - #{$grid-gutter-width * 2});
+  }
+
+  &.nine {
+    flex: 0 0 calc(75% - #{$grid-gutter-width * 2});
+  }
+
+  &.ten {
+    flex: 0 0 calc(83.3333% - #{$grid-gutter-width * 2});
+  }
+
+  &.eleven {
+    flex: 0 0 calc(91.6666% - #{$grid-gutter-width * 2});
+  }
+
+  // screen xs
+  &.one, &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven {
+    @media ( max-width: $screen-xs ) {
+      flex: 0 0 100%;
+    }
+  }
+
+  // screen sm
+  &.sm{
+    @media ( max-width: $screen-sm ) {
+      flex: 0 0 calc(100% - #{$grid-gutter-width * 2});
+    }
+  }
+
+  // screen md
+  &.md{
+    @media ( max-width: $screen-md ) {
+      flex: 0 0 calc(100% - #{$grid-gutter-width * 2});
+    }
+  }
+
+  // screen lg
+  &.lg{
+    @media ( max-width: $screen-lg ) {
+      flex: 0 0 calc(100% - #{$grid-gutter-width * 2});
+    }
+  }
+}

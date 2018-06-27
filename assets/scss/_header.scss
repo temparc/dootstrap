@@ -1,0 +1,69 @@
+header {
+  background: $secondary;
+  color: $primary;
+  padding: $section_padding_desktop;
+  text-align:center;
+
+  @media ( max-width: $menu-breakpoint ) {
+    padding: $section_padding_mobile;
+  }
+
+  .logo {
+    display: inline-block;
+    margin: 5px 15px;
+
+    @media ( max-width: $menu-breakpoint ) {
+      margin: 0px 15px;
+    }
+  }
+
+  nav {
+    display: inline-block;
+
+    @media ( max-width: $menu-breakpoint ) {
+      display: none;
+      height: 100vh;
+      padding: 15px 0px;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+
+        @media ( max-width: $menu-breakpoint ) {
+          display: block;
+          text-align:center;
+          width: 100%;
+        }
+
+        a {
+          display: block;
+
+          @media ( max-width: $menu-breakpoint ) {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-toggle {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    display: none;
+
+    @media ( max-width: $menu-breakpoint ) {
+      display: block;
+    }
+
+    .icon-bar {
+      display: block;
+      width: 100%;
+      background: $primary;
+      height: 3px;
+      margin-bottom: 5px;
+    }
+  }
+}

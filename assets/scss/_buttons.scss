@@ -1,0 +1,44 @@
+/**
+* Buttons
+*/
+
+@mixin button( $size, $color ) {
+  background: $primary;
+  border: 2px solid $primary;
+  color: $secondary;
+  line-height: inherit;
+  display: inline-block;
+  padding: 15px 35px;
+  width: auto;
+
+  // colors
+  @if( $color == 'transparent' ) {
+    background: transparent;
+    color: $primary;
+  }
+
+  // sizes
+  @if( $size == 'large' ) {
+    padding: 25px 70px;
+
+    @media ( max-width: $screen-xs ){
+      width: 100%;
+    }
+  }
+}
+
+.button, button, input[type="button"], input[type="submit"] {
+  @include button( '', '' );
+
+  &.large {
+    @include button( 'large', '' );
+  }
+
+  &.transparent {
+    @include button( '', 'transparent' );
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

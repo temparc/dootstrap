@@ -1,0 +1,24 @@
+/**
+* Mixins
+*/
+
+// colored rows - default to empty
+@mixin colored( $background-color:"", $text-color:"", $heading-color:"" ){
+
+  @if ( $background-color != "" ) {
+    background-color: $background-color;
+  }
+
+  @if ( $text-color != "" ) {
+    color: $text-color;
+    p, span, label, ::placeholder{
+      color: $text-color;
+    }
+  }
+
+  @if ( $heading-color != "" ) {
+    h1,h2,h3,h4,h5,h6 {
+      color: $heading-color;
+    }
+  }
+}
