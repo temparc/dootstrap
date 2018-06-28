@@ -1,0 +1,14 @@
+{
+    "name": "temparcweb/dootstrap",
+    "description": "A super light SCSS grid libary using flexbox with responsive nav and gallery support.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philip James de Vries",
+            "email": "phil@temparcweb.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
