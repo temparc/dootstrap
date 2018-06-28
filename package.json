@@ -1,5 +1,5 @@
 {
-  "name": "tempstrap",
+  "name": "dootstrap",
   "version": "0.1.0",
   "description": "A super lightweight SCSS grid framework for responsive websites.",
   "main": "gulpfile.js",
