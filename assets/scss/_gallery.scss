@@ -1,0 +1,57 @@
+/**
+* Gallery
+*/
+
+.gallery {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: block;
+    position:relative;
+    flex: 0 0 calc( 25% - ( #{$gutter-gallery-thumbs * 2} ) );
+    padding: $gutter-gallery-thumbs;
+
+    figure {
+      padding: 0;
+      margin: 0;
+      line-height: 0rem;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+// featherlight overrides
+.featherlight {
+  .featherlight-content {
+    background: transparent;
+    border-bottom: none;
+  }
+  .featherlight-next, .featherlight-previous {
+    background: transparent;
+    &:hover{
+
+    }
+    span{
+      display: none;
+    }
+    &:after {
+      content: 'content';
+    }
+  }
+  .featherlight-close-icon {
+    color: $white;
+    background: transparent;
+    font-size: 2rem;
+  }
+}
+

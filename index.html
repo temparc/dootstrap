@@ -2,13 +2,23 @@
 <html lang="en">
     <head>
         <title>Dootstrap - a minimalist SCSS grid</title>
+
+        <!-- metas -->
         <meta charset="UTF-8">
         <meta name="description" content="This is your SEO description">
         <meta name="keywords" content="keyword1, keyword2">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- featherlight css -->
+        <link rel="stylesheet" href="assets/dist/css/featherlight.min.css">
+        <link rel="stylesheet" href="assets/dist/css/featherlight.gallery.min.css">
+
+        <!-- main styles -->
         <link rel="stylesheet" href="assets/dist/css/main.min.css">
     </head>
     <body>
         <header>
+            <noscript>Please enable JavaScript for normal functioning of this website.</noscript>
             <a class="logo" href="/">
                 <img src="https://pony.fm/i4188/normal.png" alt="Brand Doot">
             </a>
@@ -35,11 +45,11 @@
             </div>
         </header>
         <main>
-            <div class="hero" style="background-image:url('https://pony.fm/i4188/normal.png');">
+            <div class="hero" style="background-image:url('http://i0.kym-cdn.com/entries/icons/original/000/011/121/maxresdefault.jpg');">
                 <div class="container">
                     <section class="row">
-                        <div class="col">
-                            <span class="hero-text">Here is some hero text lol</span>
+                        <div class="col md six">
+                            <h2 class="hero-text"><em>This</em> is Dootstrap 1.0</h2>
                         </div>
                     </section>
                 </div>
@@ -65,8 +75,8 @@
 
                             <p>I should like to show you an image, this image startled me when I first discovered it; I hope you are sitting down and ready.</p>
                             <figure class="img-left">
-                                <img src="https://pony.fm/i4188/normal.png">
-                                <figcaption>This is what some might call a &ldquo;spooky&rdquo; photo.</figcaption>
+                                <img src="https://www.busyboo.com/wp-content/uploads/small-rural-house-lmkln-50x50.gif" data-img data-img-lg="https://c8.alamy.com/comp/J8XB84/death-skull-one-skeleton-funny-dark-dead-man-cup-humans-human-beings-J8XB84.jpg" data-img-sm="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                <figcaption>This is what some might call a captialist &ldquo;spook&rdquo;.</figcaption>
                             </figure>
                             <h4>Making use of an h4 doot!</h4>
                             <p>Ask to be pet then attack owners hand intently sniff hand, for thug cat . Chase ball of string love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) so make meme, make cute face, but meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat and fall asleep upside-down. Lick left leg for ninety minutes, still dirty have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat. Reward the chosen human with a slow blink wack the mini furry mouse stare at wall turn and meow stare at wall some more meow again continue staring , i love cuddles, friends are not food.</p>
@@ -85,10 +95,10 @@
                         <aside>
                             <h3>This is the side doot</h3>
                             <figure>
-                                <img src="https://pony.fm/i4188/normal.png">
+                                <img src="https://pre00.deviantart.net/175d/th/pre/i/2013/159/5/a/scream_bloody_gore_by_emannikcufecin-d689ood.jpg">
                             </figure>
                             <figure>
-                                <img src="https://pony.fm/i4188/normal.png">
+                                <img src="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
                             </figure>
                         </aside>
                     </div>
@@ -133,7 +143,75 @@
                     <div class="col md six text-center">
                         <h3>An h3 doot here</h3>
                         <p>This is a hero callout doot, add images, text, or whatever you want here.</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gu4AyUWBr18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/gu4AyUWBr18" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col md eight text-center">
+                        <h3>A doot gallery</h3>
+                        <div class="gallery" data-featherlight-gallery
+                             data-featherlight-filter="a">
+                            <a href="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                <figure>
+                                    <img src="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg" data-img-small="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://coulhousehotel.com/wp-content/uploads/2016/04/CoulHousehotelhighlands134-800x423.jpg">
+                                <figure>
+                                    <img src="https://coulhousehotel.com/wp-content/uploads/2016/04/CoulHousehotelhighlands134-800x423.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://ae01.alicdn.com/kf/HTB1nt.QSpXXXXaUXpXXq6xXFXXXh/Halloween-Horrifying-Skull-Latex-Mask-Full-Face-Scary-Skeleton-Rubber-Masks-Masquerade-Party-Adult-Cosplay-Fancy.jpg_640x640.jpg">
+                                <figure>
+                                    <img src="https://ae01.alicdn.com/kf/HTB1nt.QSpXXXXaUXpXXq6xXFXXXh/Halloween-Horrifying-Skull-Latex-Mask-Full-Face-Scary-Skeleton-Rubber-Masks-Masquerade-Party-Adult-Cosplay-Fancy.jpg_640x640.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                <figure>
+                                    <img src="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg" data-img-small="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://coulhousehotel.com/wp-content/uploads/2016/04/CoulHousehotelhighlands134-800x423.jpg">
+                                <figure>
+                                    <img src="https://coulhousehotel.com/wp-content/uploads/2016/04/CoulHousehotelhighlands134-800x423.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://ae01.alicdn.com/kf/HTB1nt.QSpXXXXaUXpXXq6xXFXXXh/Halloween-Horrifying-Skull-Latex-Mask-Full-Face-Scary-Skeleton-Rubber-Masks-Masquerade-Party-Adult-Cosplay-Fancy.jpg_640x640.jpg">
+                                <figure>
+                                    <img src="https://ae01.alicdn.com/kf/HTB1nt.QSpXXXXaUXpXXq6xXFXXXh/Halloween-Horrifying-Skull-Latex-Mask-Full-Face-Scary-Skeleton-Rubber-Masks-Masquerade-Party-Adult-Cosplay-Fancy.jpg_640x640.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                <figure>
+                                    <img src="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg" data-img-small="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://coulhousehotel.com/wp-content/uploads/2016/04/CoulHousehotelhighlands134-800x423.jpg">
+                                <figure>
+                                    <img src="https://coulhousehotel.com/wp-content/uploads/2016/04/CoulHousehotelhighlands134-800x423.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://ae01.alicdn.com/kf/HTB1nt.QSpXXXXaUXpXXq6xXFXXXh/Halloween-Horrifying-Skull-Latex-Mask-Full-Face-Scary-Skeleton-Rubber-Masks-Masquerade-Party-Adult-Cosplay-Fancy.jpg_640x640.jpg">
+                                <figure>
+                                    <img src="https://ae01.alicdn.com/kf/HTB1nt.QSpXXXXaUXpXXq6xXFXXXh/Halloween-Horrifying-Skull-Latex-Mask-Full-Face-Scary-Skeleton-Rubber-Masks-Masquerade-Party-Adult-Cosplay-Fancy.jpg_640x640.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                <figure>
+                                    <img src="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg" data-img-small="https://i.ytimg.com/vi/nE3i69Qa8ak/hqdefault.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://coulhousehotel.com/wp-content/uploads/2016/04/CoulHousehotelhighlands134-800x423.jpg">
+                                <figure>
+                                    <img src="https://coulhousehotel.com/wp-content/uploads/2016/04/CoulHousehotelhighlands134-800x423.jpg">
+                                </figure>
+                            </a>
+                            <a href="https://ae01.alicdn.com/kf/HTB1nt.QSpXXXXaUXpXXq6xXFXXXh/Halloween-Horrifying-Skull-Latex-Mask-Full-Face-Scary-Skeleton-Rubber-Masks-Masquerade-Party-Adult-Cosplay-Fancy.jpg_640x640.jpg">
+                                <figure>
+                                    <img src="https://ae01.alicdn.com/kf/HTB1nt.QSpXXXXaUXpXXq6xXFXXXh/Halloween-Horrifying-Skull-Latex-Mask-Full-Face-Scary-Skeleton-Rubber-Masks-Masquerade-Party-Adult-Cosplay-Fancy.jpg_640x640.jpg">
+                                </figure>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -207,8 +285,18 @@
                 </ul>
             </nav>
         </div>
+
+        <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- carousel js -->
         <script type="text/javascript" src="assets/dist/js/carousel.min.js"></script>
+
+        <!-- featherlight & gallery js -->
+        <script type="text/javascript" src="assets/dist/js/featherlight.min.js"></script>
+        <script type="text/javascript" src="assets/dist/js/featherlight.gallery.min.js"></script>
+
+        <!-- main js -->
         <script type="text/javascript" src="assets/dist/js/main.min.js"></script>
     </body>
 </html>

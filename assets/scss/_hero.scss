@@ -2,9 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $primary;
   background-size: cover;
   background-position:center;
+  background-repeat: no-repeat;
   height: 280px;
+  color: $white;
 
   @media ( max-width: $screen-lg ) {
     height: 250px;
@@ -22,4 +25,10 @@
     height: 100px;
   }
 
+  .hero-text {
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    text-align:center;
+  }
 }

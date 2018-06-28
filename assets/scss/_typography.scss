@@ -76,6 +76,14 @@ figure {
   width: 100%;
   padding-bottom: 15px;
 
+  &.img-right, &.img-left{
+    max-width: 50%;
+
+    @media ( max-width: $screen-xs ) {
+      max-width: 100%;
+    }
+  }
+
   &.img-right {
     width: auto;
     float: right;

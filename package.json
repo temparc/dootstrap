@@ -4,6 +4,7 @@
   "description": "A super lightweight SCSS grid framework for responsive websites.",
   "main": "gulpfile.js",
   "dependencies": {
+    "featherlight": "^1.7.13",
     "hammerjs": "^2.0.8"
   },
   "devDependencies": {
