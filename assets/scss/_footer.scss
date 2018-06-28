@@ -22,6 +22,7 @@ footer {
   }
 }
 
+// copyright & links
 .subfooter {
   text-align:right;
   padding: $section_padding_desktop;
@@ -31,16 +32,29 @@ footer {
     padding: $section_padding_mobile;
   }
 
-  li {
-    border-right: 1px solid $primary;
-    padding: 5px;
-    &:last-child {
-      border: none;
-    }
+  .footer-links {
+    li {
+      border-right: 1px solid $primary;
+      padding: 5px;
 
-    a {
-      padding: 0px;
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        padding: 0px 5px;
+      }
     }
   }
+}
 
+// social icons
+.social-icons {
+  margin-bottom: 15px;
+  img {
+    width: 25px;
+    height: 25px;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
