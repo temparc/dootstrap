@@ -26,6 +26,8 @@ This project is licensed under the MIT License
 
 ## Software/Dependencies
 
+- NPM
+- Gulp.js
 - jQuery
 - FeatherLight.js
 
