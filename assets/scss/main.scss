@@ -3,6 +3,7 @@
 * Imports all SCSS in an order of your choosing, remove unnecessary files to reduce final CSS file size
 */
 
+// dootstrap
 @import "reset";
 @import "fonts";
 @import "variables";
@@ -19,3 +20,9 @@
 @import "sidebar";
 @import "embeds";
 @import "gallery";
+@import "cards";
+@import "tabs";
+
+// theme specific scss
+@import "custom/floor-plans";
+@import "custom/ninja-forms";

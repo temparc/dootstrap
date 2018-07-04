@@ -3,26 +3,16 @@
 */
 
 @font-face {
-  font-family: 'Gotham Book';
-  src: url('../../fonts/Gotham-Book.eot?') format('eot'), url('../../fonts/Gotham-Book.woff') format('woff'), url('../../fonts/Gotham-Book.woff2') format('woff2');
+  font-family: 'Avenir Book';
+  src: url('../../fonts/AvenirLTStd-Book.eot?') format('eot'), url('../../fonts/AvenirLTStd-Book.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Gotham Light';
-  src: url('../../fonts/Gotham-Light.eot?') format('eot'), url('../../fonts/Gotham-Light.woff') format('woff'), url('../../fonts/Gotham-Light.woff2') format('woff2');
+  font-family: 'Avenir Medium';
+  src: url('../../fonts/AvenirLTStd-Medium.eot?') format('eot'), url('../../fonts/AvenirLTStd-Medium.woff');
 }
 
 @font-face {
-  font-family: 'Gotham Book Italic';
-  src: url('../../fonts/Gotham-BookItalic.eot?') format('eot'), url('../../fonts/Gotham-BookItalic.woff') format('woff'), url('../../fonts/Gotham-BookItalic.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Gotham Medium';
-  src: url('../../fonts/Gotham-Medium.eot?') format('eot'), url('../../fonts/Gotham-Medium.woff') format('woff'), url('../../fonts/Gotham-Medium.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Gotham Bold';
-  src: url('../../fonts/Gotham-Medium.eot?') format('eot'), url('../../fonts/Gotham-Medium.woff') format('woff'), url('../../fonts/Gotham-Medium.woff2') format('woff2');
+  font-family: 'Avenir Roman';
+  src: url('../../fonts/AvenirLTStd-Roman.eot?') format('eot'), url('../../fonts/AvenirLTStd-Roman.woff');
 }

@@ -3,9 +3,11 @@
 */
 
 footer {
+  border-top: 3px solid $white;
   background: $primary;
   color: $secondary;
-  padding: $section_padding_desktop;
+  padding: $section_padding_mobile;
+  text-align:left;
 
   @media ( max-width: $screen-xs ) {
     padding: $section_padding_mobile;
@@ -17,15 +19,30 @@ footer {
     display: block;
   }
 
-  .col {
+  p, .col p {
+    margin: 0;
+    margin-top: 25px;
+    color: $white;
+    font-size: 1rem;
+  }
+
+  ul {
+    width: 100%;
+    display: block;
     text-align:center;
+  }
+
+  img, .col img {
+    display: inline-block;
+    max-height: 90px;
+    width: auto;
   }
 }
 
 // copyright & links
 .subfooter {
   text-align:right;
-  padding: $section_padding_desktop;
+  padding: $section_padding_mobile;
   font-size: 0.875rem;
 
   @media ( max-width: $screen-xs ) {
@@ -45,6 +62,9 @@ footer {
         padding: 0px 5px;
       }
     }
+  }
+  nav {
+    text-align:right;
   }
 }
 

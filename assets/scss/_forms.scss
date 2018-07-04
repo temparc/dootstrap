@@ -37,9 +37,17 @@ form, .default-form {
     margin-bottom: 5px;
   }
 
-  textarea, input[type="text"], input[type="email"], input[type="password"], input[type="phone"] {
-    border: 1px solid $primary;
+  textarea, input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+    border: 2px solid $tertiary;
     padding: 5px;
+  }
+
+  textarea {
+    height: $textarea_height;
+
+    @media ( max-width: $screen-xs ) {
+      height: $textarea_height_mobile;
+    }
   }
 
   input[type="radio"], input[type="checkbox"] {
@@ -47,38 +55,39 @@ form, .default-form {
     display: inline-block;
     margin-top: 0px;
     margin-right: 5px;
+
   }
 
-  button {
-    @include button( '', '');
+  button, input[type="submit"] {
+    @include button( '', $primary, $primary, $secondary );
   }
 
   .error {
     display: block;
     width: 100%;
     margin-top: 5px;
-    color: $error-color;
+    color: $color-error;
   }
 }
 
 // placeholders
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color: $placeholder-color;
+  color: $color-placeholder;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: $placeholder-color;
+  color: $color-placeholder;
   opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: $placeholder-color;
+  color: $color-placeholder;
   opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: $placeholder-color;
+  color: $color-placeholder;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: $placeholder-color;
+  color: $color-placeholder;
 }
 ::placeholder { /* Most modern browsers support this now. */
-  color: $placeholder-color;
+  color: $color-placeholder;
 }

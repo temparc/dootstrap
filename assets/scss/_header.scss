@@ -1,9 +1,18 @@
+/**
+* Header default styles
+*/
+
 header {
-  background: $secondary;
+  background: $white;
   color: $primary;
-  padding: $section_padding_desktop;
-  position: relative;
+  padding: 30px 0px;
+  width: 100%;
+  display: block;
   text-align:center;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.25);
+  box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.25);
 
   @media ( max-width: $menu-breakpoint ) {
     padding: $section_padding_mobile;
@@ -56,9 +65,18 @@ header {
 
         a {
           display: block;
+          color: $tertiary;
+          display: block;
+          padding: 20px 30px;
 
           @media ( max-width: $menu-breakpoint ) {
             padding: 15px;
+          }
+        }
+
+        &.current_page_item {
+          a {
+            color: $color-link-active;
           }
         }
       }
@@ -82,6 +100,36 @@ header {
       background: $primary;
       height: 3px;
       margin-bottom: 5px;
+    }
+  }
+}
+
+// home nav overrides
+.home {
+  header {
+    background: transparent;
+    color: $white;
+    top: 0;
+    position: absolute;
+    z-index:99;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+
+    nav {
+      ul {
+        li {
+          &.current_page_item {
+            a {
+              color: $color-link-active;
+            }
+          }
+
+          a {
+            color: $white;
+          }
+        }
+      }
     }
   }
 }

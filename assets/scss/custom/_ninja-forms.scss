@@ -1,0 +1,34 @@
+/**
+* Ninja forms overrides
+*/
+
+form {
+
+  .ninja-forms-req-symbol{
+    color: $primary;
+  }
+
+  .nf-before-form-content{
+    margin-bottom: 25px;
+
+    .nf-form-fields-required{
+      color: $tertiary-light;
+
+      .ninja-forms-req-symbol{
+        color: $tertiary-light;
+      }
+    }
+  }
+
+  .nf-field-element {
+    textarea {
+      height: $textarea_height;
+
+      @media ( max-width: $screen-xs ) {
+        height: $textarea_height_mobile;
+      }
+    }
+  }
+}
+
+

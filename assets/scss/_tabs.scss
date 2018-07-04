@@ -1,0 +1,12 @@
+/**
+* Tabs toggles
+*/
+
+// floor plan files
+.tab-content {
+  display: none;
+
+  &:first-child {
+    display: block;
+  }
+}

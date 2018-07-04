@@ -13,7 +13,8 @@ gulp.task( 'scripts', function() {
     return gulp.src( [
         // independent JS compilation so all js is not loaded on every page
         'assets/js/main.js',
-        'assets/js/carousel.js'
+        'assets/js/carousel.js',
+        'assets/js/tabs.js'
     ] )
       .pipe( rename( { suffix: '.min' } ) )
         .pipe( uglify() )
@@ -32,7 +33,7 @@ gulp.task( 'sass', function() {
 gulp.task( 'watch', function(){
 
     // css
-    gulp.watch( 'assets/scss/*.scss', ['sass'] );
+    gulp.watch( ['assets/scss/*.scss', 'assets/scss/*/*.scss'], ['sass'] );
     // js
     gulp.watch( 'assets/js/*.js', ['scripts'] );
 });

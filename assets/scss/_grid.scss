@@ -16,7 +16,80 @@
   }
 
   &.container__small {
-    max-width: 800px;
+    max-width: 860px;
+  }
+}
+
+//sections
+section {
+  padding: $section_padding_desktop;
+
+  @media ( max-width: $screen-xs ) {
+    padding: $section_padding_mobile;
+  }
+
+  &.colored {
+    color: $white;
+    h1,h2,h3,h4,h5,h6,p,span {
+      color: $white;
+    }
+    @include colored( $tertiary );
+  }
+
+  &.colored__dark {
+    @extend .colored;
+    background: $primary;
+  }
+
+  &.colored__light {
+    @extend .colored;
+    background: $secondary;
+    h1,h2,h3,h4,h5,h6,p,span {
+      color: $primary;
+    }
+  }
+
+  &.padding-bottom {
+    padding-top: 0;
+    padding-bottom: $section_padding_single_desktop;
+
+    @media ( max-width: $screen-xs ) {
+      padding-bottom: $section_padding_single_mobile;
+    }
+  }
+
+  &.padding-bottom__half {
+    padding-bottom: $section_padding_single_desktop / 2;
+
+    @media ( max-width: $screen-xs ) {
+      padding-bottom: $section_padding_single_mobile / 2;
+    }
+  }
+
+  &.padding-top {
+    padding-top: $section_padding_single_desktop;
+    padding-bottom: 0;
+
+    @media ( max-width: $screen-xs ) {
+      padding-top: $section_padding_single_desktop;
+      padding-bottom: 0;
+    }
+  }
+
+  &.padding-top__half {
+    padding-top: $section_padding_single_desktop / 2;
+
+    @media ( max-width: $screen-xs ) {
+      padding-top: $section_padding_single_mobile / 2;
+    }
+  }
+
+  &.padding-none{
+    padding:0;
+
+    @media ( max-width: $screen-xs ) {
+      padding: 0;
+    }
   }
 }
 
@@ -25,15 +98,6 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: $section_padding_desktop;
-
-  @media ( max-width: $screen-xs ) {
-    padding: $section_padding_mobile;
-  }
-
-  &.colored {
-    @include colored( $secondary );
-  }
 
   &.center-vertical {
     align-items: center;
@@ -41,7 +105,7 @@
 }
 
 // columns
-.col{
+.col {
   position: relative;
   min-height: 1px;
   flex-basis: 0;
@@ -121,5 +185,12 @@
     @media ( max-width: $screen-lg ) {
       flex: 0 0 calc(100% - #{$grid-gutter-width * 2});
     }
+  }
+
+  //images
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
