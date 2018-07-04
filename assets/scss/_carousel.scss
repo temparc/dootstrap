@@ -1,0 +1,79 @@
+/**
+* Carousel SCSS
+*/
+
+.temparc-carousel {
+  position: relative;
+  display: block;
+
+  .slide {
+    display: none;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+
+    &.visible {
+      display: block;
+      @extend .fade-in;
+    }
+  }
+
+  .controls {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba( 0,0,0,0.5);
+
+    span {
+      display: block;
+      position: relative;
+      min-height: 1px;
+      max-width: 100%;
+      color: $white;
+      padding: 10px;
+      flex-basis: 0;
+      flex-grow: 1;
+      flex: 0 0 calc( 50% - 20px );
+      transition: .4s;
+
+      &:hover {
+        cursor: pointer;
+        letter-spacing: 2px;
+      }
+
+      &:active{
+        letter-spacing: 4px;
+      }
+
+      &.previous {
+        text-align:left;
+      }
+
+      &.next {
+        text-align:right;
+      }
+    }
+  }
+
+  //fade animation
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+  .fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:.4s;
+    -moz-animation-duration:.4s;
+    animation-duration:.4s;
+  }
+}
