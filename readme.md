@@ -20,7 +20,7 @@ This project is licensed under the MIT License
 - HTML5 skeleton with header and footer
 - JS-driven mobile menu (requires jQuery)
 - Minimal SCSS Grid for responsive sites
-- Section-based layout sections
+- Section-based layout
 - Gallery/lightbox support out of the box
 - Reponsive image loading based on screen pixel ratio (add `data img`, `data-img-lg`, `data-img-sm` HTML attributes to images you want to load via JS this way)
 
@@ -33,5 +33,4 @@ This project is licensed under the MIT License
 
 ## Upcoming Improvements
 
-- add a custom, light-weight carousel
 - add a CSS masonry layout for gallery thumbnails
